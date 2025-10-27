@@ -37,7 +37,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: python-app
-          path: |
+          path: backend
             .
             !antenv/
 
@@ -63,4 +63,5 @@ jobs:
         with:
           app-name: 'app-002-gen10-step3-1-py-oshima12'
           slot-name: 'Production'
+
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B6AC9EC1263D4D81BB16B8ECD1E22674 }}
